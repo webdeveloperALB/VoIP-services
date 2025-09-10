@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { Shield, Globe, Cpu, Lock, Zap, Code } from 'lucide-react';
 
@@ -7,60 +6,60 @@ const WhyChooseUs = () => {
   const [currentLine, setCurrentLine] = useState('');
   const [isTyping, setIsTyping] = useState(false);
 
-  const voipSecurityCommands = [
-    { 
-      command: 'voip-scanner --scan-network 192.168.1.0/24',
-      responses: [
-        'Scanning VoIP devices on network...',
-        'Found 12 SIP endpoints',
-        'Found 3 PBX systems',
-        'Found 1 SBC (Session Border Controller)',
-        'Scan complete - All devices secured'
-      ]
-    },
-    {
-      command: 'sip-security --enable-encryption',
-      responses: [
-        'Enabling SRTP encryption...',
-        'Configuring TLS for SIP signaling...',
-        'Setting up ZRTP key exchange...',
-        'VoIP encryption: ACTIVE',
-        'All calls now encrypted end-to-end'
-      ]
-    },
-    {
-      command: 'call-center-monitor --status',
-      responses: [
-        'Active agents: 156',
-        'Current calls: 2,847',
-        'Call quality: 99.8% HD',
-        'Latency: 28ms average',
-        'Security threats blocked: 0'
-      ]
-    },
-    {
-      command: 'voip-firewall --update-rules',
-      responses: [
-        'Updating SIP firewall rules...',
-        'Blocking suspicious traffic patterns',
-        'Enabling DDoS protection',
-        'Rate limiting configured',
-        'VoIP firewall: SECURED'
-      ]
-    },
-    {
-      command: 'fraud-detection --analyze-calls',
-      responses: [
-        'Analyzing call patterns...',
-        'Checking for toll fraud...',
-        'Validating caller authentication...',
-        'No fraudulent activity detected',
-        'Call center security: OPTIMAL'
-      ]
-    }
-  ];
-
   useEffect(() => {
+    const voipSecurityCommands = [
+      { 
+        command: 'voip-scanner --scan-network 192.168.1.0/24',
+        responses: [
+          'Scanning VoIP devices on network...',
+          'Found 12 SIP endpoints',
+          'Found 3 PBX systems',
+          'Found 1 SBC (Session Border Controller)',
+          'Scan complete - All devices secured'
+        ]
+      },
+      {
+        command: 'sip-security --enable-encryption',
+        responses: [
+          'Enabling SRTP encryption...',
+          'Configuring TLS for SIP signaling...',
+          'Setting up ZRTP key exchange...',
+          'VoIP encryption: ACTIVE',
+          'All calls now encrypted end-to-end'
+        ]
+      },
+      {
+        command: 'call-center-monitor --status',
+        responses: [
+          'Active agents: 156',
+          'Current calls: 2,847',
+          'Call quality: 99.8% HD',
+          'Latency: 28ms average',
+          'Security threats blocked: 0'
+        ]
+      },
+      {
+        command: 'voip-firewall --update-rules',
+        responses: [
+          'Updating SIP firewall rules...',
+          'Blocking suspicious traffic patterns',
+          'Enabling DDoS protection',
+          'Rate limiting configured',
+          'VoIP firewall: SECURED'
+        ]
+      },
+      {
+        command: 'fraud-detection --analyze-calls',
+        responses: [
+          'Analyzing call patterns...',
+          'Checking for toll fraud...',
+          'Validating caller authentication...',
+          'No fraudulent activity detected',
+          'Call center security: OPTIMAL'
+        ]
+      }
+    ];
+
     let commandIndex = 0;
     let responseIndex = 0;
     let charIndex = 0;

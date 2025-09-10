@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Shield, Users, Globe, Zap } from 'lucide-react';
 
 const Stats = () => {
@@ -97,7 +97,7 @@ const Stats = () => {
       };
       
       requestAnimationFrame(animate);
-    }, [isVisible, end, duration]);
+    }, [end, duration]);
 
     return <span>{count}</span>;
   };
@@ -151,11 +151,10 @@ const Stats = () => {
               {/* Progress bar animation */}
               <div className="w-full bg-gray-700/30 rounded-full h-0.5 sm:h-1 overflow-hidden">
                 <div 
-                  className="h-full bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full transition-all duration-2000 ease-out"
-                  style={{ 
-                    width: isVisible ? '100%' : '0%',
-                    transitionDelay: `${index * 200}ms`
-                  }}
+                  className={`h-full bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full transition-all duration-2000 ease-out ${
+                    isVisible ? 'w-full' : 'w-0'
+                  }`}
+                  style={{ transitionDelay: `${index * 200}ms` }}
                 ></div>
               </div>
             </div>

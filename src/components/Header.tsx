@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Phone, Menu, X, Shield } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Shield } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,15 +30,33 @@ const Header = () => {
           </div>
 
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            {['Services', 'Features', 'Why Choose Us', 'Stats', 'Contact'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 relative group text-sm xl:text-base"
-              >
-                {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
-              </a>
+            {[
+              { name: 'Services', href: '#services' },
+              { name: 'Features', href: '#features' },
+              { name: 'Why Choose Us', href: '#why-choose-us' },
+              { name: 'Stats', href: '#stats' },
+              { name: 'Tutorials', href: '/tutorials' },
+              { name: 'Contact', href: '#contact' }
+            ].map((item) => (
+              item.href.startsWith('#') ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 relative group text-sm xl:text-base"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
+                </a>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 relative group text-sm xl:text-base"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
+                </a>
+              )
             ))}
           </nav>
 
@@ -63,14 +81,21 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-3 sm:mt-4 pb-3 sm:pb-4 border-t border-cyan-500/20 bg-black/95 backdrop-blur-md rounded-b-lg">
             <nav className="flex flex-col space-y-3 sm:space-y-4 mt-3 sm:mt-4">
-              {['Services', 'Features', 'Why Choose Us', 'Stats', 'Contact'].map((item) => (
+              {[
+                { name: 'Services', href: '#services' },
+                { name: 'Features', href: '#features' },
+                { name: 'Why Choose Us', href: '#why-choose-us' },
+                { name: 'Stats', href: '#stats' },
+                { name: 'Tutorials', href: '/tutorials' },
+                { name: 'Contact', href: '#contact' }
+              ].map((item) => (
                 <a
-                  key={item}
-                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+                  key={item.name}
+                  href={item.href}
                   className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 text-sm sm:text-base py-1"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item}
+                  {item.name}
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-3 sm:pt-4">
