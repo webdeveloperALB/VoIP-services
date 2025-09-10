@@ -14,7 +14,6 @@ import Services from './components/Services';
 import Features from './components/Features';
 import WhyChooseUs from './components/WhyChooseUs';
 import Stats from './components/Stats';
-import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
