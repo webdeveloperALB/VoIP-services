@@ -1,5 +1,5 @@
 import { } from 'react';
-import { Download, FileText, Shield, Phone, Code, Network, Settings, Users, BarChart3, Target, Play, LogIn } from 'lucide-react';
+import { Download, FileText, Shield, Phone, Network, Settings, Users, BarChart3, Target, Play, LogIn } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -191,23 +191,9 @@ const Tutorials = () => {
         <div className="container mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/40 rounded-full px-6 py-2 mb-6">
-              <Code className="w-4 h-4 text-green-400" />
-              <span className="text-sm text-green-400 font-mono">TUTORIAL_DATABASE_ACTIVE</span>
-            </div>
-            
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-green-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                VoIP Security
-              </span>
-              <br />
-              <span className="text-white">Tutorials</span>
+              <span className="bg-gradient-to-r from-green-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">Tutorials</span>
             </h1>
-            
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Master advanced VoIP security techniques, call center management, and cybersecurity protocols 
-              with our comprehensive tutorial collection.
-            </p>
           </div>
 
           {/* Tutorials Grid */}
