@@ -79,7 +79,7 @@ const HackingTerminal = () => {
           setTerminalLines(prev => {
             const newLines = [...prev];
             if (newLines.length > 15) newLines.shift();
-            newLines.push(`root@cybervoip:~# ${command}`);
+            newLines.push(`root@voixel:~# ${command}`);
             return newLines;
           });
           setCurrentCommand('');
@@ -120,7 +120,7 @@ const HackingTerminal = () => {
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-green-500 rounded-full"></div>
           </div>
-          <span className="text-green-400 text-xs hidden lg:inline">CyberVoIP Security</span>
+          <span className="text-green-400 text-xs hidden lg:inline">Voixel Security</span>
         </div>
         
         <div className="space-y-0.5 sm:space-y-1 max-h-60 sm:max-h-80 overflow-hidden">
@@ -149,7 +149,7 @@ const HackingTerminal = () => {
           
           {currentCommand && (
             <div className="text-green-400 text-xs leading-tight">
-              root@cybervoip:~# {currentCommand}
+              root@voixel:~# {currentCommand}
               <span className="animate-pulse">|</span>
             </div>
           )}

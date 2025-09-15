@@ -1,5 +1,4 @@
-import React from 'react';
-import { Shield, Phone, Mail, MapPin, Twitter, Linkedin, Github } from 'lucide-react';
+import { Phone, Mail, MapPin, Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   const footerLinks = {
@@ -45,12 +44,8 @@ const Footer = () => {
           {/* Brand section */}
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="relative">
-                <Shield className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-cyan-400" />
-                <div className="absolute inset-0 bg-cyan-400/20 blur-lg rounded-full animate-pulse"></div>
-              </div>
               <span className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                CyberVoIP
+                Voixel
               </span>
             </div>
             
@@ -111,11 +106,11 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 text-center sm:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-3">
               <Phone className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400" />
-              <span className="text-gray-300 text-xs sm:text-sm md:text-base">+1 (800) CYBER-VOIP</span>
+              <span className="text-gray-300 text-xs sm:text-sm md:text-base">+1 (800) Voixel</span>
             </div>
             <div className="flex items-center justify-center sm:justify-start space-x-3">
               <Mail className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400" />
-              <span className="text-gray-300 text-xs sm:text-sm md:text-base">security@cybervoip.com</span>
+              <span className="text-gray-300 text-xs sm:text-sm md:text-base">support@voixel.xyz</span>
             </div>
             <div className="flex items-center justify-center sm:justify-start space-x-3 sm:col-span-2 md:col-span-1">
               <MapPin className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400" />
@@ -128,7 +123,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-              © 2024 CyberVoIP. All rights reserved. Built with enterprise-grade security.
+              © 2024 Voixel. All rights reserved. Built with enterprise-grade security.
             </div>
             <div className="flex flex-wrap justify-center space-x-3 sm:space-x-4 md:space-x-6 text-xs sm:text-sm">
               <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">

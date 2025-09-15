@@ -78,7 +78,7 @@ const WhyChooseUs = () => {
           setTerminalLines(prev => {
             const newLines = [...prev];
             if (newLines.length > 20) newLines.shift();
-            newLines.push(`root@cybervoip:~# ${command}`);
+            newLines.push(`root@voixel:~# ${command}`);
             return newLines;
           });
           setCurrentLine('');
@@ -164,7 +164,7 @@ const WhyChooseUs = () => {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                 <span className="text-white">Why Choose </span>
                 <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
-                  CyberVoIP?
+                  Voixel?
                 </span>
               </h2>
               
@@ -177,7 +177,7 @@ const WhyChooseUs = () => {
               </h3>
               
               <p className="text-base md:text-lg text-gray-300 mb-6 md:mb-8 leading-relaxed">
-                At <span className="text-green-400 font-semibold">CyberVoIP</span>, we specialize in delivering 
+                At <span className="text-green-400 font-semibold">Voixel</span>, we specialize in delivering 
                 <span className="text-cyan-400"> professional-grade VoIP</span>, 
                 <span className="text-green-400"> IT support</span>, and 
                 <span className="text-cyan-400"> remote infrastructure services</span>.
@@ -236,7 +236,7 @@ const WhyChooseUs = () => {
                   <div
                     key={index}
                     className={`${
-                      line.startsWith('root@cybervoip:~#') 
+                      line.startsWith('root@voixel:~#') 
                         ? 'text-green-400' 
                         : line.includes('ACTIVE') || line.includes('SECURED') || line.includes('OPTIMAL')
                           ? 'text-cyan-400'
@@ -257,7 +257,7 @@ const WhyChooseUs = () => {
                 
                 {currentLine && (
                   <div className="text-green-400 leading-relaxed">
-                    root@cybervoip:~# {currentLine}
+                    root@voixel:~# {currentLine}
                     {isTyping && <span className="animate-pulse">|</span>}
                   </div>
                 )}

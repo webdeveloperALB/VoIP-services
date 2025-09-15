@@ -25,13 +25,13 @@ const Contact = () => {
                 {
                   icon: Phone,
                   title: "24/7 Security Hotline",
-                  info: "+1 (800) CYBER-VOIP",
+                  info: "+1 (800) Voixel",
                   description: "Immediate response for security incidents"
                 },
                 {
                   icon: Mail,
                   title: "Enterprise Sales",
-                  info: "enterprise@cybervoip.com",
+                  info: "support@voixel.xyz",
                   description: "Custom solutions and pricing"
                 },
                 {
