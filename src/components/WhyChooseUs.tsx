@@ -116,7 +116,7 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: Shield,
-      title: "Military-Grade Security",
+      title: "Security",
       description: "Advanced encryption and threat detection"
     },
     {
@@ -134,16 +134,6 @@ const WhyChooseUs = () => {
       title: "Enterprise Compliance",
       description: "SOC 2, HIPAA, and GDPR certified"
     },
-    {
-      icon: Zap,
-      title: "99.97% Uptime",
-      description: "Guaranteed service availability"
-    },
-    {
-      icon: Code,
-      title: "Custom Integration",
-      description: "Seamless API and webhook support"
-    }
   ];
 
   return (
@@ -156,10 +146,6 @@ const WhyChooseUs = () => {
           {/* Left Content */}
           <div className="relative z-10 bg-black/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-2xl mr-8">
             <div className="mb-6 md:mb-8">
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/40 rounded-full px-4 py-2 mb-4">
-                <Shield className="w-4 h-4 text-green-400" />
-                <span className="text-sm text-green-400 font-mono">SECURE_PROTOCOL_ACTIVE</span>
-              </div>
               
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                 <span className="text-white">Why Choose </span>
