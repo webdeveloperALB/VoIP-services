@@ -1,5 +1,5 @@
 import { } from 'react';
-import {  Phone, Shield, Zap } from 'lucide-react';
+import { Phone, Shield, Zap } from 'lucide-react';
 import { FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 
 const Hero = () => {
@@ -43,7 +43,7 @@ const Hero = () => {
               href="https://wa.me/447423163505"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
+              className="group px-8 py-4 bg-gradient-to-r from-green-500/70 to-green-600/70 hover:from-green-500/90 hover:to-green-600/90 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
             >
               <FaWhatsapp className="w-5 h-5" />
               <span>Contact WhatsApp</span>
@@ -53,7 +53,7 @@ const Hero = () => {
               href="https://t.me/+447423163505"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-500/70 to-blue-600/70 hover:from-blue-500/90 hover:to-blue-600/90 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
             >
               <FaTelegramPlane className="w-5 h-5" />
               <span>Contact Telegram</span>
