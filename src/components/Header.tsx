@@ -215,7 +215,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="px-4 sm:px-6 py-2 border border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 transition-all duration-300 rounded-lg text-sm sm:text-base"
                     >
-                      Login
+                      Platform 1
                     </a>
                     <a
                       href="http://212.83.133.34/mbilling/"
@@ -223,7 +223,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="px-4 sm:px-6 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 rounded-lg font-semibold text-sm sm:text-base"
                     >
-                      Get Started
+                      Platform 2
                     </a>
                   </>
                 )}
