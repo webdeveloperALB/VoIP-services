@@ -43,7 +43,7 @@ const Hero = () => {
               href="https://wa.me/447423163505"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-gradient-to-r from-green-500/70 to-green-600/70 hover:from-green-500/90 hover:to-green-600/90 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
+              className="group px-8 py-4 bg-gradient-to-r from-green-500/50 to-green-600/50 hover:from-green-500/70 hover:to-green-600/70 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
             >
               <FaWhatsapp className="w-5 h-5" />
               <span>Contact WhatsApp</span>
@@ -53,7 +53,7 @@ const Hero = () => {
               href="https://t.me/+447423163505"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-500/70 to-blue-600/70 hover:from-blue-500/90 hover:to-blue-600/90 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-500/50 to-blue-600/50 hover:from-blue-500/70 hover:to-blue-600/70 transition-all duration-300 rounded-lg font-semibold text-lg flex items-center space-x-2 transform hover:scale-105"
             >
               <FaTelegramPlane className="w-5 h-5" />
               <span>Contact Telegram</span>
