@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Twitter, Linkedin, Github } from 'lucide-react';
+import { FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   const footerLinks = {
@@ -37,7 +37,7 @@ const Footer = () => {
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,0.1)_0%,transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(147,51,234,0.1)_0%,transparent_50%)]"></div>
-      
+
       <div className="container mx-auto px-6 py-8 md:py-12 lg:py-16 relative z-10">
         {/* Main footer content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 mb-8 md:mb-12">
@@ -48,17 +48,21 @@ const Footer = () => {
                 Voixel
               </span>
             </div>
-            
+
             <p className="text-gray-400 mb-4 md:mb-6 leading-relaxed text-xs sm:text-sm md:text-base">
-              Next-generation VoIP security platform designed for enterprise call centers. 
-              Military-grade encryption meets cutting-edge cybersecurity technology.
+              Next-generation VoIP security platform designed for enterprise call centers.
             </p>
-            
+
             <div className="flex space-x-2 sm:space-x-3 md:space-x-4">
-              {[Twitter, Linkedin, Github].map((Icon, index) => (
+              {[
+                { Icon: FaWhatsapp, link: "https://wa.me/447423163505" },
+                { Icon: FaTelegramPlane, link: "https://t.me/+447423163505" },
+              ].map(({ Icon, link }, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-300"
                 >
                   <Icon className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
@@ -101,29 +105,11 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Contact info */}
-        <div className="border-t border-gray-800 pt-6 md:pt-8 mb-6 md:mb-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 text-center sm:text-left">
-            <div className="flex items-center justify-center md:justify-start space-x-3">
-              <Phone className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400" />
-              <span className="text-gray-300 text-xs sm:text-sm md:text-base">+1 (800) Voixel</span>
-            </div>
-            <div className="flex items-center justify-center sm:justify-start space-x-3">
-              <Mail className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400" />
-              <span className="text-gray-300 text-xs sm:text-sm md:text-base">support@voixel.xyz</span>
-            </div>
-            <div className="flex items-center justify-center sm:justify-start space-x-3 sm:col-span-2 md:col-span-1">
-              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400" />
-              <span className="text-gray-300 text-xs sm:text-sm md:text-base">Silicon Valley, CA</span>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom section */}
         <div className="border-t border-gray-800 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-              © 2024 Voixel. All rights reserved. Built with enterprise-grade security.
+              © 2025 Voixel. All rights reserved. Built with enterprise-grade security.
             </div>
             <div className="flex flex-wrap justify-center space-x-3 sm:space-x-4 md:space-x-6 text-xs sm:text-sm">
               <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
